@@ -1,6 +1,7 @@
 var Application = Class.extend({
   init: function() {
     $("#url").submit($.proxy(this.submitForm, this));
+    $("#results").click($.proxy(this.clickResults, this));
   }, 
   submitForm: function(event) {
     event.preventDefault();
@@ -11,6 +12,15 @@ var Application = Class.extend({
         this.parseComplete(data);
       }, this));
   },
+  clickResults: function(event) {
+    event.preventDefault();
+    
+    var target = $(event.target);
+    if (target.hasClass("color")) {
+      var color = "#" + target.attr("title").toUpperCase();
+      window.prompt("Copy to clipboard: Ctrl+C, Enter", color);
+    }
+  },
 
   parseComplete: function(data) {    
     var html = "";
@@ -18,7 +28,7 @@ var Application = Class.extend({
     if (data.colors.length > 0) {
       html += '<div class="colors">';
       $.each(data.colors, function(i, color) {
-        html += '<a class="color" href="#" style="background-color: #'+color+';">';
+        html += '<a class="color" href="#" style="background-color: #'+color+';" title="'+color+'">';
         html += color;
         html += '</a>';
       });
