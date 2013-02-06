@@ -1,1 +1,31 @@
-Hey!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Color Finder</title>
+  <meta charset="UTF-8">
+  
+  <link href="/stylesheets/normalize.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/buttons.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
+
+  <script src="/javascripts/jquery.js" type="text/javascript"></script>
+  <script src="/javascripts/class.js" type="text/javascript"></script>
+  <script src="/javascripts/identify.js" type="text/javascript"></script>
+  <script src="/javascripts/application.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <h1>Find Colors on Site</h1>
+
+    <form id="url" action="#" class="clr">
+      <input type="text" value="http://sportspyder.com/" id="site_url" />
+      <button class="button large_button">Submit</button>  
+      <div id="spinner"><img src="/images/spinner.gif" /></div>
+    </form>
+
+    <div id="results"></div>
+  </div>
+</body>
+</html>
