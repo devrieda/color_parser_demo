@@ -5,13 +5,13 @@ A basic Sinatra app for demoing the color_parser gem
 
 ## Install the required gems
 
-```ruby
+```bash
 bundle install
 ```
 
 ## Launching
 
-```
+```bash
 ruby app.rb
 ```
 
