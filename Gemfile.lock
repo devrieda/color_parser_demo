@@ -1,13 +1,19 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (3.0.0)
-    color_parser (0.0.2)
+    activesupport (3.2.11)
+      i18n (~> 0.6)
+      multi_json (~> 1.0)
+    color_parser (0.1.0)
+      curb (~> 0.8)
       nokogiri (~> 1.5)
+    curb (0.8.3)
     daemons (1.1.9)
     eventmachine (1.0.0)
+    i18n (0.6.1)
     json (1.7.6)
-    nokogiri (1.5.6)
+    multi_json (1.5.0)
+    nokogiri (1.5.9)
     rack (1.5.1)
     rack-protection (1.3.2)
       rack
@@ -25,8 +31,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport
-  color_parser (~> 0.0.2)
-  json
+  activesupport (~> 3.2.11)
+  color_parser (~> 0.1.0)
+  json (~> 1.7.6)
   sinatra (~> 1.3.4)
   thin (~> 1.5.0)
