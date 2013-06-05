@@ -2,8 +2,6 @@
 
 A basic Sinatra app for demoing the color_parser gem
 
-![Screenshot](https://raw.github.com/devrieda/color_parser_demo/master/images/screenshot.png)
-
 ## Install the required gems
 
 ```bash
